@@ -5,3 +5,7 @@
 .white-text.ant-progress .ant-progress-text{
     color: white;
 }
+
+html {
+    overflow: hidden;
+}

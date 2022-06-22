@@ -89,7 +89,7 @@ export default function DailyEvent(props) {
             </tr>
           </thead>
           <tbody>
-            <tr className="text-center h-screen">
+            <tr className="text-center h-96">
               <td className="border p-1 xl:w-40 lg:w-30 md:w-30 sm:w-20 w-10 overflow-hidden transition cursor-pointer duration-500 ease hover:bg-gray-300 ">
                 {props.data.map((event) => (
                   <>
@@ -111,7 +111,7 @@ export default function DailyEvent(props) {
                   </>
                 ))}
               </td>
-              <td className="border p-1 h-40 xl:w-40 lg:w-30 md:w-30 sm:w-20 w-10 overflow-auto transition cursor-pointer duration-500 ease hover:bg-gray-300">
+              <td className="border p-1 xl:w-40 lg:w-30 md:w-30 sm:w-20 w-10 overflow-auto transition cursor-pointer duration-500 ease hover:bg-gray-300">
                 {props.data.map((event) => (
                   <>
                     {moment(event.start_time).week() ===
@@ -133,7 +133,7 @@ export default function DailyEvent(props) {
                   </>
                 ))}
               </td>
-              <td className="border p-1 h-40 xl:w-40 lg:w-30 md:w-30 sm:w-20 w-10 overflow-auto transition cursor-pointer duration-500 ease hover:bg-gray-300">
+              <td className="border p-1 xl:w-40 lg:w-30 md:w-30 sm:w-20 w-10 overflow-auto transition cursor-pointer duration-500 ease hover:bg-gray-300">
                 {props.data.map((event) => (
                   <>
                     {moment(event.start_time).week() ===
@@ -155,7 +155,7 @@ export default function DailyEvent(props) {
                   </>
                 ))}
               </td>
-              <td className="border p-1 h-40 xl:w-40 lg:w-30 md:w-30 sm:w-20 w-10 overflow-auto transition cursor-pointer duration-500 ease hover:bg-gray-300">
+              <td className="border p-1 xl:w-40 lg:w-30 md:w-30 sm:w-20 w-10 overflow-auto transition cursor-pointer duration-500 ease hover:bg-gray-300">
                 {props.data.map((event) => (
                   <>
                     {moment(event.start_time).week() ===
@@ -177,7 +177,7 @@ export default function DailyEvent(props) {
                   </>
                 ))}
               </td>
-              <td className="border p-1 h-40 xl:w-40 lg:w-30 md:w-30 sm:w-20 w-10 overflow-auto transition cursor-pointer duration-500 ease hover:bg-gray-300">
+              <td className="border p-1 xl:w-40 lg:w-30 md:w-30 sm:w-20 w-10 overflow-auto transition cursor-pointer duration-500 ease hover:bg-gray-300">
                 {props.data.map((event) => (
                   <>
                     {moment(event.start_time).week() ===
@@ -199,7 +199,7 @@ export default function DailyEvent(props) {
                   </>
                 ))}
               </td>
-              <td className="border p-1 h-40 xl:w-40 lg:w-30 md:w-30 sm:w-20 w-10 overflow-hidden transition cursor-pointer duration-500 ease hover:bg-gray-300">
+              <td className="border p-1 xl:w-40 lg:w-30 md:w-30 sm:w-20 w-10 overflow-hidden transition cursor-pointer duration-500 ease hover:bg-gray-300">
                 {props.data.map((event) => (
                   <>
                     {moment(event.start_time).week() ===
@@ -221,7 +221,7 @@ export default function DailyEvent(props) {
                   </>
                 ))}
               </td>
-              <td className="border p-1 h-40 xl:w-40 lg:w-30 md:w-30 sm:w-20 w-10 overflow-auto transition cursor-pointer duration-500 ease hover:bg-gray-300">
+              <td className="border p-1 xl:w-40 lg:w-30 md:w-30 sm:w-20 w-10 overflow-auto transition cursor-pointer duration-500 ease hover:bg-gray-300">
                 {props.data.map((event) => (
                   <>
                     {moment(event.start_time).week() ===
