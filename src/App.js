@@ -13,20 +13,12 @@ import "react-toastify/dist/ReactToastify.css";
 import { useSelector } from "react-redux";
 import Calendar from "./components/frontend/Calendar/Calendar";
 import NotFound from "./components/frontend/home/NotFound";
-import { useEffect } from "react";
+import Agenda from "./components/frontend/agenda/Agenda";
 
 function App() {
   const isLogin = useSelector((state) => state.auth.isLogin);
   const history = useHistory();
 
-  // const redirect = () => {
-  //   if (isLogin === false) {
-  //     history.push("/");
-  //   }
-  // };
-  // useEffect(() => {
-  //   redirect();
-  // }, []);
   return (
     <div className="App">
       <Router>
@@ -39,6 +31,7 @@ function App() {
               <Route path="/task" component={Home} />
               <Route path="/meeting" component={Meeting} />
               <Route path="/calendar" component={Calendar} />
+              <Route path="/agenda" component={Agenda} />
               <Route path="*" component={NotFound} />
             </>
           ) : (
